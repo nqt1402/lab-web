@@ -1,0 +1,47 @@
+#header{
+    color: rgb(247, 13, 13);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(79, 191, 232);
+}
+
+/* Loại bỏ dấu chấm mặc định của danh sách nếu muốn */
+.music-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Định dạng từng mục danh sách */
+.music-list li {
+    margin-bottom: 30px; /* Tạo khoảng cách giữa các bài hát */
+    border-bottom: 1px solid #ccc; /* Gạch dưới từng bài cho gọn */
+    padding-bottom: 10px;
+}
+
+/* Định dạng tiêu đề bài hát */
+.song-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px; /* Khoảng cách giữa tên bài và ảnh */
+}
+
+/* Định dạng ảnh */
+.music-list img {
+    display: block;   /* Ép ảnh xuống dòng dưới tiêu đề */
+    max-width: 200px; /* Đảm bảo ảnh không quá to */
+    border: 3px solid red; /* Khung ảnh theo ý bạn */
+}
+/* Loại bỏ gạch chân mặc định và giữ màu chữ */
+.song-link {
+    text-decoration: none;
+    color: inherit; /* Giữ màu chữ giống các phần tử khác */
+}
+
+/* Thêm hiệu ứng đổi màu khi di chuột vào (tăng tính tương tác) */
+.song-link:hover .song-title {
+    color: blue;
+    text-decoration: underline;
+}
